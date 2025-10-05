@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>NordicBean – Kohvisegud</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html" aria-label="NordicBean avaleht">
+      <span class="dot"></span>
+      <span>NordicBean</span>
+    </a>
+    <nav>
+      <a href="index.html">Avaleht</a>
+      <a href="products.html">Kohvisegud</a>
+      <a href="checkout.html">Telli</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="kicker">Valik</div>
+    <h1 class="h2">Leia oma lemmik</h1>
+
+    <div class="grid-3" id="productGrid">
+      <!-- Cards inserted by JS for brevity -->
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <p class="notice">Prototüüp: nupule "Lisa korvi" vajutades suuname kassasse ning salvestame valitud toote nime kohalikku salvestusse.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between">
+    <span class="muted">© 2025 NordicBean (prototüüp)</span>
+    <div style="display:flex;gap:10px">
+      <a class="muted" href="index.html">Avaleht</a>
+      <a class="muted" href="checkout.html">Telli</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const products = [
+    {name:'Metsamarjane', tag:'LIGHT ROAST', price:'9.90€', notes:'Maasikas, mustikas, jasmiin'},
+    {name:'Šokolaadine', tag:'MEDIUM ROAST', price:'9.90€', notes:'Kakao, karamell, pähkel'},
+    {name:'Pähkline', tag:'MEDIUM', price:'9.90€', notes:'Sarapuu, šerii, vürts'},
+    {name:'Espresso Blend', tag:'ESPRESSO', price:'10.90€', notes:'Tume šokolaad, karamell'},
+    {name:'Decaf', tag:'CO2 DECAF', price:'10.50€', notes:'Kakao, mandel, õrn tsitrus'},
+    {name:'Maitsevalik 3×100g', tag:'TASTER', price:'12.90€', notes:'Kolm populaarset maitset'}
+  ];
+
+  const grid = document.getElementById('productGrid');
+  products.forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'card product-card';
+    card.innerHTML = `
+      <span class="tag">${p.tag}</span>
+      <h3>${p.name}</h3>
+      <p class="muted">${p.notes}</p>
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <span class="price">${p.price}</span>
+        <button class="btn" data-name="${p.name}">Lisa korvi</button>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  grid.addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-name]');
+    if(!btn) return;
+    const name = btn.getAttribute('data-name');
+    try{ localStorage.setItem('selectedProduct', name); }catch(e){}
+    location.href = 'checkout.html';
+  });
+</script>
+</body>
+</html>

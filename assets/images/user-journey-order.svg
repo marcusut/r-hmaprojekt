@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="900" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg{fill:#0f1115}
+      .card{fill:#11151b;stroke:#24303a}
+      .title{font:700 34px Inter,Segoe UI,Arial; fill:#e9eef7}
+      .t{font:500 18px Inter,Segoe UI,Arial; fill:#e9eef7}
+      .note{font:400 16px Inter,Segoe UI,Arial; fill:#a7b0c0}
+      .arrow{stroke:#2f8f57;stroke-width:3;fill:none;marker-end:url(#m) }
+    </style>
+    <marker id="m" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0,0 12,6 0,12" fill="#2f8f57"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1400" height="900"/>
+  <text x="40" y="70" class="title">Kasutaja teekond: avalehelt kuni tellimuseni (NordicBean)</text>
+
+  <!-- Steps row -->
+  <g transform="translate(60,120)">
+    <g id="s1">
+      <rect class="card" width="240" height="120" rx="14"/>
+      <text x="16" y="36" class="t">Siseneb avalehele</text>
+      <text x="16" y="66" class="note">Reklaam / soovitus / Google</text>
+    </g>
+    <path class="arrow" d="M300,60 L360,60"/>
+    <g id="s2" transform="translate(360,0)">
+      <rect class="card" width="240" height="120" rx="14"/>
+      <text x="16" y="36" class="t">Sirvib ja valib CTA</text>
+      <text x="16" y="66" class="note">Klikib „Vali kohv“</text>
+    </g>
+    <path class="arrow" d="M660,60 L720,60"/>
+    <g id="s3" transform="translate(720,0)">
+      <rect class="card" width="240" height="120" rx="14"/>
+      <text x="16" y="36" class="t">Kataloog</text>
+      <text x="16" y="66" class="note">Võrdleb 2–3 segu, klõps „Lisa korvi“</text>
+    </g>
+    <path class="arrow" d="M1020,60 L1080,60"/>
+    <g id="s4" transform="translate(1080,0)">
+      <rect class="card" width="240" height="120" rx="14"/>
+      <text x="16" y="36" class="t">Kassa</text>
+      <text x="16" y="66" class="note">Täidab andmed, valib tarneviisi</text>
+    </g>
+  </g>
+
+  <!-- Second row -->
+  <g transform="translate(360,320)">
+    <path class="arrow" d="M0,0 L0,40"/>
+    <g transform="translate(-180,40)">
+      <rect class="card" width="240" height="120" rx="14"/>
+      <text x="16" y="36" class="t">Kinnitamine</text>
+      <text x="16" y="66" class="note">„Kinnita tellimus“ → edukas</text>
+    </g>
+    <path class="arrow" d="M60,100 L260,100"/>
+    <g transform="translate(260,40)">
+      <rect class="card" width="260" height="120" rx="14"/>
+      <text x="16" y="36" class="t">Kinnitus &amp; tarne</text>
+      <text x="16" y="66" class="note">E-kiri, röstimine 24–48h, saadetis teel</text>
+    </g>
+  </g>
+
+  <!-- Emotions -->
+  <g transform="translate(60,520)">
+    <text class="t" fill="#e9eef7">Emotsioonid: huvi → kindlustunne → elevus → rahulolu</text>
+    <text class="note" y="34">Võtmekohad: selge CTA, lihtsad valikud, nähtav saatmispoliitika, pausimise võimalus.</text>
+  </g>
+</svg>

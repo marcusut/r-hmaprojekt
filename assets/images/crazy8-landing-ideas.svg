@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="900" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg{fill:#0f1115}
+      .panel{fill:#11151b;stroke:#24303a}
+      .title{font:700 34px Inter,Segoe UI,Arial; fill:#e9eef7}
+      .t{font:500 18px Inter,Segoe UI,Arial; fill:#e9eef7}
+      .idx{font:700 18px Inter,Segoe UI,Arial; fill:#5bd17f}
+      .note{font:400 16px Inter,Segoe UI,Arial; fill:#a7b0c0}
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="900"/>
+  <text x="40" y="70" class="title">Crazy 8's – Maandumislehe ideed (NordicBean)</text>
+
+  <!-- Grid 4x2 -->
+  <g transform="translate(40,100)">
+    <g id="row1">
+      <g transform="translate(0,0)">
+        <rect class="panel" width="320" height="320" rx="14"/>
+        <text x="16" y="28" class="idx">1</text>
+        <text x="16" y="60" class="t">Hero + kiire CTA</text>
+        <text x="16" y="88" class="note">Suur pealkiri, tasuta saatmise riba, CTA „Vali kohv“. Fototaust.</text>
+      </g>
+      <g transform="translate(340,0)">
+        <rect class="panel" width="320" height="320" rx="14"/>
+        <text x="16" y="28" class="idx">2</text>
+        <text x="16" y="60" class="t">Maitsefilter</text>
+        <text x="16" y="88" class="note">3 kiirkaarti: marjane/šokolaadine/pähkline → viib kataloogi eelfiltriga.</text>
+      </g>
+      <g transform="translate(680,0)">
+        <rect class="panel" width="320" height="320" rx="14"/>
+        <text x="16" y="28" class="idx">3</text>
+        <text x="16" y="60" class="t">Kuidas see toimib</text>
+        <text x="16" y="88" class="note">3 sammu: vali segu → määra sagedus → naudi värskust.</text>
+      </g>
+      <g transform="translate(1020,0)">
+        <rect class="panel" width="320" height="320" rx="14"/>
+        <text x="16" y="28" class="idx">4</text>
+        <text x="16" y="60" class="t">Sotsiaalne tõestus</text>
+        <text x="16" y="88" class="note">Tärnid + 3 lühikest tsitaati, logoread partneritest.</text>
+      </g>
+    </g>
+    <g id="row2" transform="translate(0,340)">
+      <g transform="translate(0,0)">
+        <rect class="panel" width="320" height="320" rx="14"/>
+        <text x="16" y="28" class="idx">5</text>
+        <text x="16" y="60" class="t">Valikukomplekt</text>
+        <text x="16" y="88" class="note">Highlight „Maitsevalik 3×100g“ kiire proovimiseks.</text>
+      </g>
+      <g transform="translate(340,0)">
+        <rect class="panel" width="320" height="320" rx="14"/>
+        <text x="16" y="28" class="idx">6</text>
+        <text x="16" y="60" class="t">Läbipaistvus</text>
+        <text x="16" y="88" class="note">Päritolu, röstimispäevad, keskkond. QR-koodi näide.</text>
+      </g>
+      <g transform="translate(680,0)">
+        <rect class="panel" width="320" height="320" rx="14"/>
+        <text x="16" y="28" class="idx">7</text>
+        <text x="16" y="60" class="t">Sticky CTA</text>
+        <text x="16" y="88" class="note">Külgriba või allserva riba „Vali kohv“ püsib nähtaval.</text>
+      </g>
+      <g transform="translate(1020,0)">
+        <rect class="panel" width="320" height="320" rx="14"/>
+        <text x="16" y="28" class="idx">8</text>
+        <text x="16" y="60" class="t">Korduma kippuvad</text>
+        <text x="16" y="88" class="note">Lühike KKK: saatmine, pausimine, tagastus – usalduse loomiseks.</text>
+      </g>
+    </g>
+  </g>
+</svg>

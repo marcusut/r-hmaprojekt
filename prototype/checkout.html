@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>NordicBean – Kassa</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html" aria-label="NordicBean avaleht">
+      <span class="dot"></span>
+      <span>NordicBean</span>
+    </a>
+    <nav>
+      <a href="index.html">Avaleht</a>
+      <a href="products.html">Kohvisegud</a>
+      <a href="checkout.html">Telli</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="kicker">Kassa</div>
+    <h1 class="h2">Viimane samm</h1>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="margin-top:0">Tellimuse kokkuvõte</h3>
+        <div id="summary">
+          <p>Valitud toode: <strong id="selectedProduct">(vali toode)</strong></p>
+          <div class="hr"></div>
+          <label class="label">Kogus</label>
+          <select id="qty" class="input">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <div class="hr"></div>
+          <label class="label">Kas soovid tellimust korrata?</label>
+          <select id="frequency" class="input">
+            <option value="once">Ühekordne ost</option>
+            <option value="2w">Iga 2 nädala tagant</option>
+            <option value="4w">Iga 4 nädala tagant</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card">
+        <form id="orderForm" class="form">
+          <div class="row">
+            <div>
+              <div class="label">Eesnimi</div>
+              <input class="input" required placeholder="Mari"/>
+            </div>
+            <div>
+              <div class="label">Perekonnanimi</div>
+              <input class="input" required placeholder="Maasikas"/>
+            </div>
+          </div>
+          <div>
+            <div class="label">E-post</div>
+            <input class="input" type="email" required placeholder="mari@example.com"/>
+          </div>
+          <div>
+            <div class="label">Aadress</div>
+            <input class="input" required placeholder="Kohvi tn 5-7"/>
+          </div>
+          <div class="row">
+            <div>
+              <div class="label">Linn</div>
+              <input class="input" required placeholder="Tallinn"/>
+            </div>
+            <div>
+              <div class="label">Sihtnumber</div>
+              <input class="input" required placeholder="10111"/>
+            </div>
+          </div>
+          <div>
+            <div class="label">Tarneviis</div>
+            <select class="input">
+              <option>Pakiautomaat (2.49€)</option>
+              <option>Kuller (4.99€)</option>
+              <option>Tulen ise järele (0€)</option>
+            </select>
+          </div>
+          <button class="btn" type="submit">Kinnita tellimus</button>
+          <div class="notice">Prototüüp: vorm ei saada andmeid serverisse, vaid kuvame kinnitusekraani.</div>
+        </form>
+
+        <div id="success" class="success">
+          <span>✓</span>
+          <div>
+            <div><strong>Aitäh! Tellimus on vastu võetud.</strong></div>
+            <div class="muted">Kinnitus saadetakse e-postile. Valitud toode: <span id="successProduct"></span>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between">
+    <span class="muted">© 2025 NordicBean (prototüüp)</span>
+    <div style="display:flex;gap:10px">
+      <a class="muted" href="index.html">Avaleht</a>
+      <a class="muted" href="products.html">Kohvisegud</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  (function(){
+    let sel = '(vali toode)';
+    try { sel = localStorage.getItem('selectedProduct') || sel; } catch(e){}
+    document.getElementById('selectedProduct').textContent = sel;
+
+    const form = document.getElementById('orderForm');
+    const success = document.getElementById('success');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      success.style.display = 'flex';
+      document.getElementById('successProduct').textContent = sel;
+      form.style.display = 'none';
+    });
+  })();
+</script>
+</body>
+</html>

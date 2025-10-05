@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#5bd17f"/>
+      <stop offset="1" stop-color="#7fc4ff"/>
+    </linearGradient>
+    <style>
+      .title{font:700 40px Inter,Segoe UI,Arial}
+      .sub{font:600 22px Inter,Segoe UI,Arial}
+      .t{font:400 18px Inter,Segoe UI,Arial}
+      .muted{fill:#8aa0b5}
+      .card{fill:#11151b;stroke:#24303a}
+      .chip{fill:#e6fff0}
+      .chipText{font:700 14px Inter,Segoe UI,Arial; fill:#0f1a14}
+      .h{font:700 20px Inter,Segoe UI,Arial}
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="#0f1115"/>
+  <rect x="40" y="40" width="1120" height="720" rx="18" class="card"/>
+
+  <!-- Persona header -->
+  <text x="80" y="110" class="title" fill="#e9eef7">Persoon: Anna K., 29 – noor spetsialist, Tallinna kohvigurmaani</text>
+  
+  <!-- Avatar -->
+  <g transform="translate(90,160)">
+    <circle cx="120" cy="120" r="120" fill="url(#g1)" opacity="0.25"/>
+    <circle cx="120" cy="120" r="90" fill="#1a2029" stroke="#2a3a48"/>
+    <circle cx="120" cy="105" r="32" fill="#ffdfc9"/>
+    <rect x="80" y="135" width="80" height="60" rx="30" fill="#c7d9ff"/>
+    <text x="120" y="235" text-anchor="middle" class="sub" fill="#e9eef7">Anna</text>
+    <text x="120" y="262" text-anchor="middle" class="t muted">29 a • UX disainer</text>
+  </g>
+
+  <!-- Left column: Profiil -->
+  <g transform="translate(360,170)">
+    <text class="h" fill="#e9eef7">Profiil</text>
+    <text class="t muted" y="28">Elab Kalamajas, töötab hübriidgraafikuga. Joob 2–3 tassi kohvi päevas.</text>
+    <text class="t muted" y="52">Harjunud tellima e-poest; hindab kiiret ostuteed ja mobiilisõbralikkust.</text>
+    <g transform="translate(0,84)">
+      <rect class="chip" width="115" height="28" rx="14"/>
+      <text x="10" y="19" class="chipText">Mobiilikasutaja</text>
+      <g transform="translate(125,0)">
+        <rect class="chip" width="150" height="28" rx="14"/>
+        <text x="10" y="19" class="chipText">Keskkonnateadlik</text>
+      </g>
+      <g transform="translate(285,0)">
+        <rect class="chip" width="130" height="28" rx="14"/>
+        <text x="10" y="19" class="chipText">Töötav noor</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Middle column: Eesmärgid ja Valupunktid -->
+  <g transform="translate(360,290)">
+    <text class="h" fill="#e9eef7">Eesmärgid</text>
+    <text class="t" y="26" fill="#e9eef7">• Leida värske ja stabiilse maitsega kohv koju</text>
+    <text class="t" y="50" fill="#e9eef7">• Mugav paindlik tellimus (pausimine puhkuse ajaks)</text>
+    <text class="t" y="74" fill="#e9eef7">• Läbipaistev päritolu ja kestlikkus</text>
+  </g>
+
+  <g transform="translate(360,420)">
+    <text class="h" fill="#e9eef7">Valupunktid</text>
+    <text class="t" y="26" fill="#e9eef7">• Liigne info ja keeruline valikute rohkus</text>
+    <text class="t" y="50" fill="#e9eef7">• Varasem halb kogemus siduvate "tellimuspüünistega"</text>
+    <text class="t" y="74" fill="#e9eef7">• Tarne ajakindlus ja värskus</text>
+  </g>
+
+  <!-- Right column: Käitumine ja Meeldimised -->
+  <g transform="translate(360,560)">
+    <text class="h" fill="#e9eef7">Käitumine &amp; eelistused</text>
+    <text class="t" y="26" fill="#e9eef7">• Võrdleb 2–3 valikut, hindab selgeid maitseprofiile</text>
+    <text class="t" y="50" fill="#e9eef7">• Harjunud: kiire filter, selge hind, tasuta saatmise piir</text>
+    <text class="t" y="74" fill="#e9eef7">• Meeldib: lühike teekond 3–4 klikki, mobiilis mugav</text>
+    <text class="t" y="98" fill="#e9eef7">• Ei meeldi: peidetud kulud, kohustuslik konto enne ostu</text>
+  </g>
+</svg>
