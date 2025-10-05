@@ -57,10 +57,9 @@ Allpool on meie arutelupunktid ja otsused.
 - Vajadusel tühjendage valik lisades aadressiribale hash `#clear` kassas (nt checkout.html#clear), mis puhastab localStorage'i ja viib valikulehele.
 
 ## Tiimiliikmed
-- Lisage siia nimed (üks liige laadib foorumisse ja lisab rühmakaaslaste nimed):
-  - Marcus-Imre Tikerpe
-  - Jesper Korsen
-  - Jelena Fokina
+ - Marcus-Imre Tikerpe
+ - Jesper Korsen
+ - Jelena Fokina
 
 ## Märkused
 - Pildid/taust: Unsplash (ainult prototüübi eesmärgil).
