@@ -4,14 +4,6 @@ Periood: 22.09–05.10.2025
 
 See repo sisaldab prototüüpi kujuteldava ettevõtte jaoks: NordicBean – Eesti väikeröstla, kes müüb värskelt röstitud erikohvi (ühekordsed ostud ja paindlik korduvtellimus). Prototüüp koosneb maandumislehest ja kahest lisalehest (kataloog/valik ja kassa), lisaks nõutud UX-artefaktid: persoon, Crazy 8's ja kasutaja teekond.
 
-## Esitamise failid (foorumisse „Projektid”)
-- Persoon (pilt): assets/images/persona-anna.svg
-- Crazy 8's (pilt, maandumislehe ideed): assets/images/crazy8-landing-ideas.svg
-- Kasutaja teekond (pilt): assets/images/user-journey-order.svg
-- Interaktiivne prototüüp (link): prototype/index.html
-
-Vajadusel avage failid otse või kasutage WebStormi/VS Code'i sisseehitatud „Open in Browser”.
-
 ## Prototüübi struktuur
 - Avaleht: prototype/index.html
 - Kohvisegud (valik): prototype/products.html
