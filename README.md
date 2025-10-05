@@ -58,9 +58,9 @@ Allpool on meie arutelupunktid ja otsused.
 
 ## Tiimiliikmed
 - Lisage siia nimed (üks liige laadib foorumisse ja lisab rühmakaaslaste nimed):
-  - Nimi 1
-  - Nimi 2
-  - Nimi 3
+  - Marcus-Imre Tikerpe
+  - Jesper Korsen
+  - Jelena Fokina
 
 ## Märkused
 - Pildid/taust: Unsplash (ainult prototüübi eesmärgil).
